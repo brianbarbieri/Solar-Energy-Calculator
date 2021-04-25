@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solar Energy Calculator</title>
+    <meta name="description" content="A static website where you can calculate how the utalisation of solar energy can be cost effective for you.">
+    <meta name="author" content="Brian Barbieri">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <h2>Solar Energy Calculator</h2>
+        </div>
+        <div class="row">
+            <p>This simple open source tool can be used to calculate the economic benefits of owning solar energy</p> 
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <h3>Calculator</h3>
+        </div>
+        <div class="row">
+            <form form-group>
+                <div class="row">
+                    <div class="col">
+                        <label>Number of panels</label>
+                        <input type="text" class="form-control" placeholder="4" id="num_pan">
+                    </div>
+                    <div class="col">
+                        <label>Average Wp of panels</label>
+                        <input type="text" class="form-control" placeholder="365" id="wp_pan">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Price of panel (€)</label>
+                        <input type="text" class="form-control" placeholder="136.95" id="p_pan">
+                    </div>
+                    <div class="col">
+                        <label>Price of inverter (€)</label>
+                        <input type="text" class="form-control" placeholder="359.00" id="p_inv">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Lifetime of panel (years)</label>
+                        <input type="text" class="form-control" placeholder="30" id="lt_pan">
+                    </div>
+                    <div class="col">
+                        <label>Lifetime of inverter (years)</label>
+                        <input type="text" class="form-control" placeholder="10" id="lt_inv">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Average electricity price (€/kWh)</label>
+                        <input type="text" class="form-control" placeholder="0.22" id="elec_cost">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    <script src="scripts.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
