@@ -1,5 +1,5 @@
 function calc(){
-    
+
     var num_panels = parseFloat($('#num_pan').val())
     if ((num_panels  === "") | (isNaN(num_panels))){
         num_panels = parseFloat($('#num_pan').attr('placeholder'));
@@ -65,10 +65,7 @@ function calc(){
     if (not_break_even){
         $('#breven').html("No break-even point can be reached")
     }
-
-
 }
-
 
 $('#num_pan, #wp_pan, #p_pan, #p_inv, #lt_pan, lt_inv, #elec_cost').on('input', calc);
 calc()
