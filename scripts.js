@@ -35,8 +35,9 @@ function calc(){
         elec_cost = parseFloat($('#elec_cost').attr('placeholder'));
     }
 
+    var test = true;
+
     var not_break_even = true;
-    var total_cost = 0 //(num_panels * p_panels) + p_inv;
     var total_income = 0;
     var total_profit = 0;
     var total_costs = 0;
